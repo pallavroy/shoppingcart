@@ -18,8 +18,8 @@ public class Main {
         Product i1 = new TypeOffProduct(new PercentOffProduct(new Item1("Jeans", 100), 10), 10);
         Product i2 = new TypeOffProduct(new PercentOffProduct(new Item2("Watch", 500), 10), 10);
 
-        cart.addItem(i1);
-        cart.addItem(i2);
+        cart.addItem(i1, 2);
+        cart.addItem(i2, 1);
 
         System.out.println("\nCart total: " + cart.getTotalPrice());
 
